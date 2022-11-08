@@ -117,6 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          if (_counter > 0)
           Expanded(
             child: FloatingActionButton(
               onPressed: _decrementCounter,
