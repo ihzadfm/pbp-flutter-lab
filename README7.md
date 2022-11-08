@@ -1,5 +1,6 @@
-Nama : Ihza Dafa Maulidan NPM : 21066652726 
-Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/todolist/
+Nama : Ihza Dafa Maulidan 
+NPM : 21066652726 
+PBP F
 
 1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 
@@ -9,6 +10,8 @@ Beda halnya dengan stateless widget. Widget ini bersifat statis, tidak bisa diub
 
 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
  
+Saya menggunakan widget seperti Row class yang mempunyai fungsi widget yang digunakan untuk memposisikan widget-widget lainnya secara horizontal, yang kedua widget floatingActionButton sebagai tombol di bawah kanan kiri screen yang membuat aksi ketika diklik, yang ketiga widget Expanded widget sebagai container yang memperluas anak dari Row, Column (widget) atau flex sehingga mengisi ruang yang tersedia, dan yang terakhir Text widget supaya teks dapat muncul di screen.
+
 3. Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.
 
 Data dari sebuah stateful widget akan disimpan pada object State, membuatnya terpisah dari bagian presentasi (atau view). Nantinya, di dalam object State ini, data akan dimanipulasi dan diubah dengan memanggil fungsi setState(). Untuk merubah state gunakan perintah this.setState(). Ketika state berubah secara otomatis component akan di render ulang. method disini menggunakan arrow function untuk menghindari problem javascript bind.
@@ -23,3 +26,11 @@ Data dari sebuah stateful widget akan disimpan pada object State, membuatnya ter
 - Dikanonikal. Ini adalah semacam string interning: untuk nilai const yang diberikan, objek const tunggal akan dibuat dan digunakan kembali tidak peduli berapa kali ekspresi const dievaluasi.
 
 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+-  Kita mengganti FloatingActionButton yang ada dengan sebuah baris.
+
+- Setelah itu, otomatis setelah menambahkan satu lagi dengan tujuan dikurangi karena berisi dua buah FloatingActionButton dari parameter FloatingActionButton sebagai sebuah baris.
+
+- Saya kemudian mengubah  "You have clicked this button many times" menjadi string yang bergantung pada nilai state-counter.
+
+- Sebelumnya, saya membuat variabel status baru untuk isGanjil dan warna komponen teks, terenyata saya juga dapat menggunakan operator ternary untuk menentukan variabel teks dan tipe TextStyle secara kondisional.
